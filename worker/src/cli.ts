@@ -12,7 +12,7 @@ if (!input) {
 }
 
 const url = await assertSafeUrl(input);
-console.log('Measuring', url, '...');
+console.log(`Measuring ${url} using local Lighthouse...`);
 const { lhr, runScores, engine } = await measure(url);
 const report = await buildReport(lhr, { runScores, engine });
 

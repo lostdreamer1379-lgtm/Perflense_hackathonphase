@@ -178,7 +178,7 @@ export interface Report {
     url: string;
     finalUrl: string;
     device: 'mobile';
-    engine: 'local' | 'psi';
+    engine: 'local';
     runs: number;
     runScores: number[];
     analyzedAt: string;

@@ -10,7 +10,7 @@ import { writeSummaries } from './llm/summaries.js';
 
 export interface BuildContext {
   runScores: number[];
-  engine: 'local' | 'psi';
+  engine: 'local';
   onStage?: (stage: string) => void | Promise<void>;
 }
 
