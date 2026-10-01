@@ -80,11 +80,11 @@ export default function EngineeringSummary({ report }: { report: Report }) {
           <p className="mt-2 max-w-[68ch] text-sm text-muted">
             These are reversible what-if tests. They block requests temporarily and re-run Lighthouse; they do not change the website.
           </p>
-          <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+          <ul className="mt-4 grid min-w-0 grid-cols-1 gap-3 sm:grid-cols-2">
             {report.simulationPlan.map((scenario) => (
-              <li key={scenario.id} className="border border-line p-4">
-                <h4 className="font-semibold">{scenario.label}</h4>
-                <p className="mt-1 text-sm text-muted">{scenario.description}</p>
+              <li key={scenario.id} className="min-w-0 overflow-hidden border border-line p-4">
+                <h4 className="break-words font-semibold">{scenario.label}</h4>
+                <p className="mt-1 break-words text-sm text-muted">{scenario.description}</p>
               </li>
             ))}
           </ul>
