@@ -1,0 +1,10 @@
+{
+  "name": "perf-ai",
+  "private": true,
+  "scripts": {
+    "sync-types": "node scripts/sync-types.mjs",
+    "dev:web": "npm --prefix web run dev",
+    "dev:worker": "npm --prefix worker run dev",
+    "install:all": "npm --prefix web install && npm --prefix worker install"
+  }
+}
