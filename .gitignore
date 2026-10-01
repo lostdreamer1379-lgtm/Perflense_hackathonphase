@@ -3,3 +3,9 @@ node_modules
 worker/debug
 dist
 *.log
+data/*.csv
+ml/models/*.pkl
+ml/models/*.onnx
+__pycache__
+*.pyc
+ml/notebooks/.ipynb_checkpoints
