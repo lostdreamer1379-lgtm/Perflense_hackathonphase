@@ -1,0 +1,20 @@
+LCP Model Results
+=================
+
+Training Samples: 273
+Test Samples: 69
+
+Train MAE: 1107 ms
+Test MAE:  1965 ms
+Train R²:  0.825
+Test R²:   0.439
+
+Feature Importance:
+          feature  importance
+performance_score          96
+     bytes_images          87
+      bytes_fonts          84
+         bytes_js          78
+        bytes_css          70
+      requests_3p          63
+     dom_elements           0
